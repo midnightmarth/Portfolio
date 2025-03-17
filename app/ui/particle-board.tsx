@@ -5,10 +5,14 @@ import styles from '@/app/ui/home.module.css';
 
 export default function ParticleBoard({ toggle }: {toggle: boolean}) {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
+    const particlesInitialized = useRef(false); // Prevent reinitialization
     const mousePosRef = useRef({ x: 0, y: 0 });
     const particles: Particle[] = [];
 
     useEffect(() => {
+        if (particlesInitialized.current) return; // Don't re-run if already initialized
+        particlesInitialized.current = true;
+
         if (!toggle) return;
 
         const canvas = canvasRef.current;
@@ -58,7 +62,7 @@ export default function ParticleBoard({ toggle }: {toggle: boolean}) {
     }
 
     return (
-        <div className="absolute inset-0 z-0">
+        <div className="fixed inset-0 z-0">
             <canvas ref={canvasRef}></canvas>
         </div>
     );

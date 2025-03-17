@@ -11,12 +11,11 @@ export default function Page() {
 
     return (
         <main className="flex min-h-screen flex-col p-6 text-primary-text">
-			<SideNav />
             <input type="button" className="z-10" onClick={() => {
                 console.log("Button Clicked")
                 setToggle(!toggle)
             }} value={"Toggle Background "+toggle}/>
-            {/* {toggle && <ParticleBoard toggle={toggle}/>} */}
+            {/* {toggle && } */}
 			<IntroComponent />
 			<AboutPreview />
 			<TechStack />
