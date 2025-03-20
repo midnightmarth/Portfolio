@@ -1,8 +1,6 @@
 export default function IntroComponent() {
     return (
       <div className="relative z-10 flex flex-col items-center justify-center h-screen text-center text-[#E0E0E0]">
-        <div id="particle-bg" className="absolute inset-0 z-0"></div>
-  
         <div className="px-6">
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
             Hi, I'm <span className="text-[#E67E22]">Stephen Myers</span>.

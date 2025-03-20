@@ -22,9 +22,9 @@ export default function ContactPage() {
         alert("Message Sent! (Implement backend later)");
         setForm({ name: "", email: "", message: "" });
     };
-
+    // flex min-h-screen flex-col p-6 text-primary-text
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-[#121212] text-[#E0E0E0] px-6">
+        <div className="flex items-center justify-center min-h-screen flex-col p-6 mt-40 text-primary-text">
             <div className="text-center mb-12">
                 <h1 className="text-4xl font-bold">Let's Get in Touch</h1>
                 <p className="text-[#B0B0B0] mt-3">

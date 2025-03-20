@@ -62,8 +62,8 @@ export default function ParticleBoard({ toggle }: {toggle: boolean}) {
     }
 
     return (
-        <div className="fixed inset-0 z-0">
-            <canvas ref={canvasRef}></canvas>
+        <div className="fixed top-0 left-0 w-full h-full z-[-1] pointer-events-none">
+            <canvas  ref={canvasRef}></canvas>
         </div>
     );
 }

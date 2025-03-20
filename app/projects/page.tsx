@@ -44,9 +44,9 @@ export default function ProjectsPage() {
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (
-        <div className="min-h-screen bg-[#121212] text-[#E0E0E0] px-6 py-12">
+        <div className="flex min-h-screen items-center flex-col p-6 mt-40 text-primary-text">
             {/* Hero Section */}
-            <div className="text-center pt-24">
+            <div className="text-center bg-secondary-bg max-w-3xl rounded-3xl p-10">
                 <h1 className="text-5xl font-bold">My Projects</h1>
                 <p className="text-lg text-[#B0B0B0] mt-4">
                     A collection of my work in game development, web applications, 3D modeling, and teaching.
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
             </div>
 
             {/* Project Grid */}
-            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 min-w-full">
                 {projects.map((project, index) => (
                     <div
                         key={index}

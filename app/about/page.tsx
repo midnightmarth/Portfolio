@@ -26,8 +26,8 @@ const experience = [
 
 export default function AboutPage() {
     return (
-        <div className="min-h-screen flex flex-col bg-[#121212] text-[#E0E0E0] px-6 py-12">
-            <div className="text-center max-w-3xl mx-auto pt-24 py-5">
+        <div className="flex min-h-screen flex-col p-6 mt-40 text-primary-text">
+            <div className="text-center max-w-3xl mx-auto py-8 mb-6 bg-secondary-bg rounded-3xl p-10">
                 <Image
                     src="/face-shot.png"
                     alt="Profile Picture"
@@ -55,7 +55,7 @@ export default function AboutPage() {
             <TechStack />
 
             {/* Experience Timeline */}
-            <section className="mt-16 max-w-3xl mx-auto">
+            <section className="mt-16 max-w-3xl mx-auto bg-secondary-bg p-10 rounded-3xl">
                 <h2 className="text-3xl font-bold text-center">My Journey</h2>
                 <div className="mt-6 border-l-4 border-[#E67E22] pl-6">
                     {experience.map((exp, index) => (
@@ -77,7 +77,7 @@ export default function AboutPage() {
             </section>
 
             {/* Fun Facts Section */}
-            <section className="mt-16 max-w-3xl mx-auto text-center">
+            <section className="mt-16 max-w-3xl mx-auto text-center bg-secondary-bg p-10 rounded-3xl">
                 <h2 className="text-3xl font-bold">Fun Facts</h2>
                 <ul className="mt-6 text-lg text-[#B0B0B0] space-y-4">
                     <li className="flex items-center">

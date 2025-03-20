@@ -1,7 +1,7 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import Footer from './ui/footer';
-import SideNav from './ui/sidenav';
+import SideNav from './ui/navbar';
 import ParticleBoard from './ui/particle-board';
 
 export default function RootLayout({
@@ -18,9 +18,9 @@ export default function RootLayout({
 			</head>
 			<body className={`${inter.className} bg-primary-bg antialiased font-inter`}>
 				<SideNav />
-				<ParticleBoard toggle={true}/>
 				{children}
 				<Footer />
+				<ParticleBoard toggle={true}/>
 			</body>
 		</html>
 	);
