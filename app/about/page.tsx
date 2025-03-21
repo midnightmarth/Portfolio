@@ -68,7 +68,7 @@ export default function AboutPage() {
             </section>
 
             {/* Resume Viewer */}
-            <section className="my-16 w-full h-96 max-w-3xl mx-auto text-center">
+            <section className="my-16 w-full max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl font-bold">Resume</h2>
                 <iframe
                     src="/resume.pdf"

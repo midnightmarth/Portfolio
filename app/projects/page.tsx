@@ -20,7 +20,7 @@ const projects = [
         image: "/images/friendlyfam.jpg",
         liveDemo: "https://friendlyfam.com",
         github: "https://github.com/midnightmarth/friendlyfam",
-        technologies: ["React", "Flask", "PostgreSQL"],
+        technologies: ["Flask", "HTML", "CSS", "SQLite"],
     },
     {
         title: "Sci-Fi Helmet 3D Model",
@@ -28,7 +28,7 @@ const projects = [
         description: "A high-poly sci-fi helmet made in Blender.",
         image: "/images/helmet.jpg",
         sketchfab: "https://sketchfab.com/models/example",
-        technologies: ["Blender", "Substance Painter"],
+        technologies: ["Blender"],
     },
     {
         title: "Sorting Algorithm Visualizer",
@@ -36,7 +36,7 @@ const projects = [
         description: "A Python app that visualizes sorting algorithms.",
         image: "/images/sorting.jpg",
         github: "https://github.com/midnightmarth/sorting-visualizer",
-        technologies: ["Python", "Pygame", "Sorting Algorithms"],
+        technologies: ["Python", "Flask", "Sorting Algorithms"],
     },
 ];
 

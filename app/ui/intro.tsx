@@ -10,10 +10,10 @@ export default function IntroComponent() {
           </p>
   
           <div className="mt-6 space-x-4">
-            <a href="#projects" className="px-6 py-3 bg-[#E67E22] text-[#121212] rounded-lg text-lg font-medium hover:bg-[#F39C12] transition">
+            <a href="/projects" className="px-6 py-3 bg-[#E67E22] text-[#121212] rounded-lg text-lg font-medium hover:bg-[#F39C12] transition">
               View My Work
             </a>
-            <a href="#contact" className="px-6 py-3 border border-[#E67E22] text-[#E67E22] rounded-lg text-lg font-medium hover:bg-[#E67E22] hover:text-[#121212] transition">
+            <a href="/contact" className="px-6 py-3 border border-[#E67E22] text-[#E67E22] rounded-lg text-lg font-medium hover:bg-[#E67E22] hover:text-[#121212] transition">
               Contact Me
             </a>
           </div>

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutPreview() {
     return (
-      <section id="about" className="py-16 z-10 bg-[#1E1E1E] text-[#E0E0E0] text-center">
+      <section id="about" className="py-16 z-10 my-6 bg-[#1E1E1E] text-[#E0E0E0] text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold">About Me</h2>
           <p className="text-lg text-[#B0B0B0] mt-4">

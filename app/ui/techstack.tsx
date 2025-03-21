@@ -17,7 +17,7 @@ const techStack = [
 
 export default function TechStack() {
 	return (
-		<section id="tech" className="flex py-16 text-center bg-[#181818] justify-center flex-col">
+		<section id="tech" className="flex py-16 my-6 text-center bg-[#181818] justify-center flex-col">
 			<h2 className="text-3xl font-bold text-[#E0E0E0]">Tech Stack</h2>
 			<div className="flex flex-wrap justify-center items-center mt-6 gap-10 min-w-8">
 				{techStack.map((tech) => (
