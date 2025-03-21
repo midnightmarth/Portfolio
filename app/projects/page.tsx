@@ -2,14 +2,27 @@
 import { useState } from "react";
 import ProjectModal from "../ui/projectmodal"; // Modal for detailed project views
 
+// Define the project type
+interface Project {
+    title: string;
+    type: string;
+    description: string;
+    image: string;
+    unityBuild?: string;
+    liveDemo?: string;
+    github?: string;
+    sketchfab?: string;
+    technologies: string[];
+}
+
 // Example project data
-const projects = [
+const projects: Project[] = [
     {
         title: "Sporelords",
         type: "Game Development",
         description: "Procedurally generated FPS survival game.",
         image: "/images/sporelords.jpg",
-        unityBuild: "/webgl/sporelords/index.html", // Unity WebGL Export
+        unityBuild: "/webgl/sporelords/index.html",
         github: "https://github.com/midnightmarth/sporelords",
         technologies: ["Unity", "C#", "Procedural Generation"],
     },
@@ -41,7 +54,7 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
-    const [selectedProject, setSelectedProject] = useState(null);
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     return (
         <div className="flex min-h-screen items-center flex-col p-6 mt-40 text-primary-text">
@@ -79,7 +92,6 @@ export default function ProjectsPage() {
             {selectedProject && (
                 <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
             )}
-
         </div>
     );
 }
