@@ -1,7 +1,6 @@
 'use client'
 import { useState, ChangeEvent, FormEvent } from "react";
 import { Github, SendHorizonal, Mail, Linkedin } from 'lucide-react';
-
 interface FormData {
     name: string;
     email: string;
@@ -15,14 +14,20 @@ export default function ContactPage() {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-
-    // Handle form submission with FormEvent type
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert("Message Sent! (Implement backend later)");
-        setForm({ name: "", email: "", message: "" });
+        const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form),
+        });
+        if (res.ok) {
+            alert("Message sent successfully!");
+            setForm({ name: "", email: "", message: "" });
+        } else {
+            alert("Failed to send message. Please try again.");
+        }
     };
-    // flex min-h-screen flex-col p-6 text-primary-text
     return (
         <div className="flex items-center justify-center min-h-screen flex-col p-6 mt-40 text-primary-text">
             <div className="text-center mb-12">

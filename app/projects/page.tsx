@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
-import ProjectModal from "../ui/projectmodal"; // Modal for detailed project views
+import ProjectModal from "../ui/projectmodal"; 
 
-// Define the project type
 interface Project {
     title: string;
     type: string;
@@ -15,7 +14,6 @@ interface Project {
     technologies: string[];
 }
 
-// Example project data
 const projects: Project[] = [
     {
         title: "Sporelords",
@@ -36,10 +34,10 @@ const projects: Project[] = [
         technologies: ["Flask", "HTML", "CSS", "SQLite"],
     },
     {
-        title: "Sci-Fi Helmet 3D Model",
+        title: "Sci-Fi Axe 3D Model",
         type: "3D Modeling",
-        description: "A high-poly sci-fi helmet made in Blender.",
-        image: "/images/helmet.jpg",
+        description: "A high-poly sci-fi axe made in Blender.",
+        image: "/images/axe.jpg",
         sketchfab: "https://sketchfab.com/models/example",
         technologies: ["Blender"],
     },

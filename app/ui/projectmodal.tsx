@@ -1,6 +1,4 @@
-// import { FiX, FiGithub, FiExternalLink } from "react-icons/fi";
 import { X, Github, Link2 } from "lucide-react";
-
 
 interface Project {
   title: string;

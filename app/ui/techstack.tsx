@@ -23,7 +23,6 @@ export default function TechStack() {
 				{techStack.map((tech) => (
 					<div key={tech.name} className="flex flex-col items-center">
 						<Image src={tech.logo} alt={tech.name} width={200} height={200} className="h-auto w-16 filter brightness-75 hover:brightness-100 transition" />
-						{/* <p className="text-[#B0B0B0] mt-2">{tech.name}</p> */}
 					</div>
 				))}
 			</div>

@@ -31,7 +31,6 @@ export default class Particle {
         this.x += this.movement.x;
         this.y += this.movement.y;
 
-        // Check for collisions with canvas boundaries
         if (this.x - this.radius < 0 || this.x + this.radius > this.canvas.width) {
             this.movement.x = -this.movement.x;
         }
@@ -45,10 +44,7 @@ export default class Particle {
 
     private changeColor(mousePos: { x: number, y: number }) {
         const distanceToMouse = Math.sqrt((this.x - mousePos.x) ** 2 + (this.y - mousePos.y) ** 2);
-        // const maxDistance = Math.sqrt(this.canvas.width ** 2 + this.canvas.height ** 2);
         const maxDistance = 10;
-        // console.log(maxDistance);
-        // this.opacity = 1 - (distanceToMouse / maxDistance);
         this.opacity = 1- Math.abs(distanceToMouse/maxDistance) * .01; 
         this.color = `rgba(255, 255, 255, ${this.opacity})`;
     }
