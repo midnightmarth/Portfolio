@@ -29,10 +29,10 @@ export default function SideNav() {
 
       {menuOpen && (
         <div className="absolute top-16 right-6 bg-[#1E1E1E] border border-[#292929] rounded-lg shadow-lg p-4 flex flex-col space-y-4 md:hidden">
-          <Link href="#home" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link href="#about" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="#projects" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>Projects</Link>
-          <Link href="#contact" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link href="/" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/about" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/projects" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link href="/contact" className="text-primary-text hover:text-navbar-linkhover" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}
     </nav>
