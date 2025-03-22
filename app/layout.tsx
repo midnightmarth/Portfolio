@@ -4,6 +4,7 @@ import Footer from './ui/footer';
 import SideNav from './ui/navbar';
 import ParticleBoard from './ui/particle-board';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RootLayout({
 	children,
@@ -23,6 +24,7 @@ export default function RootLayout({
 				<Footer />
 				<ParticleBoard toggle={true}/>
 				<SpeedInsights />
+				<Analytics />
 			</body>
 		</html>
 	);
