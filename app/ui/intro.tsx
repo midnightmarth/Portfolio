@@ -9,7 +9,7 @@ export default function IntroComponent() {
             Full-Stack Software Engineer & Game Developer.
           </p>
   
-          <div className="mt-6 space-x-4">
+          <div className="mt-6 space-x-4 flex justify-center">
             <a href="/projects" className="px-6 py-3 bg-[#E67E22] text-[#121212] rounded-lg text-lg font-medium hover:bg-[#F39C12] transition">
               View My Work
             </a>

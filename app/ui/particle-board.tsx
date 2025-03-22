@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Particle from "../lib/particle";
 import styles from '@/app/ui/home.module.css';
 
@@ -8,7 +8,7 @@ export default function ParticleBoard({ toggle }: {toggle: boolean}) {
     const particlesInitialized = useRef(false);
     const mousePosRef = useRef({ x: 0, y: 0 });
     const particles: Particle[] = [];
-
+    let particleCount = 0;
     useEffect(() => {
         if (particlesInitialized.current) return;
         particlesInitialized.current = true;
@@ -30,7 +30,12 @@ export default function ParticleBoard({ toggle }: {toggle: boolean}) {
             mousePosRef.current = { x: event.clientX, y: event.clientY };
         });
 
-        for (let i = 0; i < 150; i++) {
+        const width = window.innerWidth;
+        if (width > 1200) particleCount = 150; // Desktop
+        else if (width > 768) particleCount = 70; // Tablet
+        else particleCount = 40; // Mobile
+        console.log("Particle count: ", particleCount, window.innerWidth)
+        for (let i = 0; i < particleCount; i++) {
             const particle = new Particle(i, 8, 'white', 3, 0.75, canvas);
             particles.push(particle);
         }
