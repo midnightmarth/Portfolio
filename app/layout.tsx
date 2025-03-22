@@ -3,6 +3,7 @@ import { inter } from '@/app/ui/fonts';
 import Footer from './ui/footer';
 import SideNav from './ui/navbar';
 import ParticleBoard from './ui/particle-board';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function RootLayout({
 	children,
@@ -21,6 +22,7 @@ export default function RootLayout({
 				{children}
 				<Footer />
 				<ParticleBoard toggle={true}/>
+				<SpeedInsights />
 			</body>
 		</html>
 	);
