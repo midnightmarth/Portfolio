@@ -30,8 +30,8 @@ export default function ParticleBoard({ toggle }: {toggle: boolean}) {
             mousePosRef.current = { x: event.clientX, y: event.clientY };
         });
 
-        for (let i = 0; i < 250; i++) {
-            const particle = new Particle(i, 8, 'white', 5, 0.75, canvas);
+        for (let i = 0; i < 150; i++) {
+            const particle = new Particle(i, 8, 'white', 3, 0.75, canvas);
             particles.push(particle);
         }
 
