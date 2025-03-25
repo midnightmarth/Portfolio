@@ -2,19 +2,6 @@
 import { Download, ArrowBigRight } from "lucide-react";
 import Image from "next/image";
 import TechStack from "../ui/techstack";
-const techStack = [
-    { name: "React", logo: "/React_Logo.png" },
-    { name: "Node.js", logo: "/Nodejs_Logo.png" },
-    { name: "C#", logo: "/C_Sharp_Logo.png" },
-    { name: "Unity", logo: "/Unity_Logo.png" },
-    { name: "CSS", logo: "/CSS_Logo.png" },
-    { name: "HTML", logo: "/HTML5_Logo.png" },
-    { name: "MongoDB", logo: "/Mongodb_Logo.png" },
-    { name: "Next.js", logo: "/Nextjs_Logo.png" },
-    { name: "Python", logo: "/Python_Logo.png" },
-    { name: "MySQL", logo: "/MySQL_Logo.png" },
-    { name: "TypeScript", logo: "/TypeScript_Logo.png" },
-];
 
 const experience = [
     { year: "2013", role: "Started Programming", desc: "Began coding at 13 with Unity and C#." },
@@ -107,7 +94,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold">Resume</h2>
                 <iframe
                     src="/resume.pdf"
-                    className="w-full h-96 border border-[#292929] mt-6 rounded-lg shadow-lg"
+                    className="w-full h-[500px] rounded-lg"
                 />
             </section>
 
