@@ -3,14 +3,6 @@ import { Download, ArrowBigRight } from "lucide-react";
 import Image from "next/image";
 import TechStack from "../ui/techstack";
 
-const experience = [
-    { year: "2013", role: "Started Programming", desc: "Began coding at 13 with Unity and C#." },
-    { year: "2018", role: "Hack Reactor", desc: "Completed 900-hour coding bootcamp." },
-    { year: "2019", role: "Software Engineer @ Visa", desc: "Worked on front-end UI improvements and tracking systems." },
-    { year: "2023", role: "Database Administrator @ Deep Lineage", desc: "Managed and optimized Oracle APEX systems." },
-    { year: "2024", role: "Teaching Programming", desc: "Began instructing Python, C#, and game dev concepts." },
-];
-
 export default function AboutPage() {
     return (
         <div className="flex min-h-screen flex-col p-6 mt-40 text-primary-text">
@@ -65,26 +57,48 @@ export default function AboutPage() {
                 <div className="mt-6 border-l-4 border-[#E67E22] pl-6">
                     <div className="mb-6">
                         <h3 className="text-xl font-bold">Game Development</h3>
-                        <p className="text-[#B0B0B0]">
-                            I started with <strong>game development</strong> and built projects like <strong>Sporelords</strong> and a <strong>Restaurant Tycoon Simulator</strong> that I havent named yet.
-                            I explored <strong>procedural generation</strong>, including <strong>Wave Function Collapse (WFC)</strong> to create <strong>textures, cities, forests, and roadways</strong>.
-                        </p>
+                        <div className="text-[#B0B0B0] ">
+                            <p className="py-4">My programming journey started in childhood, where I explored <strong>game development</strong> and even sold my early projects to classmates. That passion stuck with me, and I quickly became the go-to <strong>IT guy</strong> among my friends.
+                            </p>
+                            <p className="py-4">Over the years, I’ve continued honing my skills, leading to my latest projects: <strong>Sporelords</strong> and a <strong>Restaurant Tycoon Simulator</strong>. Both have pushed me to expand my understanding of <strong>game mechanics, AI systems, and procedural generation</strong>.
+
+                            </p>
+                            <p className="py-4">Speaking of procedural generation, my interest in complex algorithms led me to implement a <strong>Wave Function Collapse (WFC) algorithm</strong> to generate <strong>textures, cities, forests, and roadways</strong>. You can see more of this in action on my <strong><a href="/projects">Projects</a></strong> page!
+                            </p>
+                        </div>
                     </div>
 
                     <div className="mb-6">
                         <h3 className="text-xl font-bold">Web Development</h3>
-                        <p className="text-[#B0B0B0]">
-                            As I expanded my skill set, I developed this <strong>portfolio website</strong> to showcase my abilities.
-                            I built it with <strong>Next.js and TypeScript</strong>, learning these technologies in under a week while refining my front-end expertise.
-                        </p>
+                        <div className="text-[#B0B0B0]">
+                            <p className="py-4">
+                                My journey into web development began in 2018 when I attended Hack Reactor, a programming boot camp designed to teach software development in an intensive 900-hour, three-month program. After graduating, I landed a role at Visa, where I primarily worked on the front end. My responsibilities included fixing UI issues and migrating the existing frontend to an updated in-house UI framework. Unfortunately, due to company-wide cutbacks during COVID, all contractors—including myself—were let go.
+                            </p>
+                            <p className="py-4">
+                                After Visa, I secured another frontend position, though my role quickly expanded into full-stack development. In addition to fixing UI inconsistencies and updating components to follow best practices, I also developed and integrated new backend endpoints to support my UI work. One of my key contributions was designing and implementing a Microsoft-themed UI update for one of the company's plugins. However, due to a misalignment in work priorities, I eventually parted ways with the company.
+                            </p>
+                            <p className="py-4">
+                                Since then, I’ve been working as a programming instructor at Coding With Kids, teaching HTML, CSS, JavaScript, Python, Flask, C#, and MySQL. Alongside teaching, I also take on freelance projects, which led me to develop this very portfolio website. Built with Next.js and TypeScript, I took the opportunity to learn these technologies in under a week while refining my front-end expertise.
+                            </p>
+                        </div>
                     </div>
 
                     <div className="mb-6">
                         <h3 className="text-xl font-bold">Teaching & Mentorship</h3>
-                        <p className="text-[#B0B0B0]">
-                            Teaching has been a natural extension of my knowledge.
-                            I’ve helped students build <strong>FriendlyFam</strong>, a web application they developed while learning deployment and real-world coding practices.
-                        </p>
+                        <div className="text-[#B0B0B0]">
+                            <p className="py-4">
+
+                            Beyond my work in <strong>game and web development</strong>, I’ve also found a passion for teaching and mentorship. As an instructor at Coding With Kids, I’ve had the opportunity to guide students of all ages through the fundamentals of programming, covering languages and frameworks like HTML, CSS, JavaScript, Python, Flask, C#, and MySQL. Teaching has not only reinforced my own knowledge but has also helped me develop strong communication skills, breaking down complex topics into digestible concepts for beginners and more advanced learners alike.
+                            </p>
+                            <p className="py-4">
+
+                            In addition to structured teaching, I enjoy mentoring aspiring developers, whether through tutoring, technical discussions, or helping others navigate career transitions. I understand how challenging it can be to break into the industry, so I strive to provide guidance on both the technical and practical aspects of software development.
+                            </p>
+                            <p className="py-4">
+
+                            My experience as an educator has influenced how I approach problem-solving and teamwork in my own projects. It has taught me to look at code not just from a developer’s perspective but also from the lens of someone who may be maintaining or learning from it later. Whether building software, writing documentation, or mentoring others, I aim to make technology more accessible, intuitive, and engaging.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
